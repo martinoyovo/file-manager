@@ -10,7 +10,7 @@ flutter run
 
 ### App Preview
 
-|              Page 1             |             Page 2           |
+|              Screen 1             |             Screen 2           |
 | :----------------------------------: | :----------------------------------: |
 | <img src="https://github.com/martinoyovo/file-manager/blob/main/screenshots/p1.png" width="350"> | <img src="https://github.com/martinoyovo/file-manager/blob/main/screenshots/p2.png" width="350"> |
 
