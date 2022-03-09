@@ -3,8 +3,14 @@
 
 ```shell
 git clone https://github.com/martinoyovo/messenger-app.git
+```
+```shell
 flutter clean
+```
+```shell
 flutter packages get
+```
+```shell
 flutter run
 ```
 
