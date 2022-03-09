@@ -2,7 +2,7 @@
 ### Get Started
 
 ```shell
-git clone https://github.com/martinoyovo/messenger-app.git
+git clone https://github.com/martinoyovo/file-manager.git
 ```
 ```shell
 flutter clean
