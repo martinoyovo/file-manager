@@ -5,7 +5,7 @@ import 'package:gap/gap.dart';
 
 class StorageListItemWidget extends StatelessWidget {
   final Map<String, dynamic> storageListItem;
-  StorageListItemWidget(this.storageListItem);
+  const StorageListItemWidget(this.storageListItem, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class StorageListItemWidget extends StatelessWidget {
                 30,
               ),
             ),
-            child: Container(
+            child: SizedBox(
               width: 45,
               height: 45,
               child: SvgPicture.asset(

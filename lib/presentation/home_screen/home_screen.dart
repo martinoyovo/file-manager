@@ -9,6 +9,8 @@ import 'package:gap/gap.dart';
 import '../stats_screen/widgets/header_clipper.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,7 +56,7 @@ class HomeScreen extends StatelessWidget {
                       Transform.rotate(
                         angle: -pi / 2,
                         child: Text(
-                          "Internal storage",
+                          'Internal storage',
                           textAlign: TextAlign.left,
                           //textDirection: TextDirection.rtl,
                           style: TextStyle(
@@ -80,7 +82,7 @@ class HomeScreen extends StatelessWidget {
                       Transform.rotate(
                         angle: -pi / 2,
                         child: Text(
-                          "External storage",
+                          'External storage',
                           maxLines: null,
                           textAlign: TextAlign.left,
                           style: TextStyle(
@@ -111,7 +113,7 @@ class HomeScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Container(
+                        SizedBox(
                           width: size.width,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -156,7 +158,7 @@ class HomeScreen extends StatelessWidget {
                                           10,
                                         ),
                                       ),
-                                      child: Container(
+                                      child: SizedBox(
                                         height: getSize(
                                           12,
                                         ),
@@ -186,7 +188,7 @@ class HomeScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Container(
+                              SizedBox(
                                 width: getHorizontalSize(
                                   142,
                                 ),
@@ -231,7 +233,7 @@ class HomeScreen extends StatelessWidget {
                                     71,
                                   ),
                                 ),
-                                child: Container(
+                                child: SizedBox(
                                   height: getVerticalSize(
                                     6,
                                   ),
@@ -325,7 +327,7 @@ class HomeScreen extends StatelessWidget {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (_) => StatsScreen())),
+                                        builder: (_) => const StatsScreen())),
                                 child: Container(
                                   width: getHorizontalSize(
                                     252,
@@ -400,7 +402,7 @@ class HomeScreen extends StatelessWidget {
                                                       MainAxisSize.max,
                                                   children: [
                                                     Text(
-                                                      "Your Storage",
+                                                      'Your Storage',
                                                       overflow:
                                                           TextOverflow.ellipsis,
                                                       textAlign: TextAlign.left,
@@ -422,7 +424,7 @@ class HomeScreen extends StatelessWidget {
                                                           1,
                                                         ),
                                                       ),
-                                                      child: Container(
+                                                      child: SizedBox(
                                                         height: getSize(
                                                           24,
                                                         ),
@@ -440,7 +442,7 @@ class HomeScreen extends StatelessWidget {
                                                 ),
                                               ),
                                               const Gap(14),
-                                              Container(
+                                              SizedBox(
                                                 width: getHorizontalSize(
                                                   230,
                                                 ),
@@ -449,7 +451,7 @@ class HomeScreen extends StatelessWidget {
                                                       MainAxisAlignment.center,
                                                   children: [
                                                     const Gap(60),
-                                                    Container(
+                                                    SizedBox(
                                                       height: 100,
                                                       width: 100,
                                                       child: CustomPaint(
@@ -513,7 +515,7 @@ class HomeScreen extends StatelessWidget {
                                                                     TextAlign
                                                                         .left),
                                                             Text(
-                                                              "70% USED",
+                                                              '70% USED',
                                                               overflow:
                                                                   TextOverflow
                                                                       .ellipsis,
@@ -580,7 +582,7 @@ class HomeScreen extends StatelessWidget {
                                                                 ),
                                                               ),
                                                               child: Text(
-                                                                "Used",
+                                                                'Used',
                                                                 overflow:
                                                                     TextOverflow
                                                                         .ellipsis,
@@ -605,7 +607,7 @@ class HomeScreen extends StatelessWidget {
                                                             ),
                                                           ],
                                                         ),
-                                                        Gap(16),
+                                                        const Gap(16),
                                                         Row(
                                                           crossAxisAlignment:
                                                               CrossAxisAlignment
@@ -652,7 +654,7 @@ class HomeScreen extends StatelessWidget {
                                                                 ),
                                                               ),
                                                               child: Text(
-                                                                "Free",
+                                                                'Free',
                                                                 overflow:
                                                                     TextOverflow
                                                                         .ellipsis,
@@ -778,7 +780,7 @@ class HomeScreen extends StatelessWidget {
                                                                     getHorizontalSize(
                                                                   2,
                                                                 ),
-                                                                offset: Offset(
+                                                                offset: const Offset(
                                                                   0,
                                                                   2,
                                                                 ),
@@ -839,11 +841,9 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      Container(
-                        child: SvgPicture.asset(
-                          ImageConstant.imgCompassfilled,
-                          fit: BoxFit.fill,
-                        ),
+                      SvgPicture.asset(
+                        ImageConstant.imgCompassfilled,
+                        fit: BoxFit.fill,
                       ),
                       const Gap(20),
                       Container(
@@ -871,17 +871,13 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Container(
-                    child: SvgPicture.asset(
-                      ImageConstant.imgDocumentfille,
-                      fit: BoxFit.fill,
-                    ),
+                  SvgPicture.asset(
+                    ImageConstant.imgDocumentfille,
+                    fit: BoxFit.fill,
                   ),
-                  Container(
-                    child: SvgPicture.asset(
-                      ImageConstant.imgSettings,
-                      fit: BoxFit.fill,
-                    ),
+                  SvgPicture.asset(
+                    ImageConstant.imgSettings,
+                    fit: BoxFit.fill,
                   ),
                 ],
               ),

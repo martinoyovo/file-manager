@@ -9,6 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class StatsScreen extends StatelessWidget {
+  const StatsScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +27,7 @@ class StatsScreen extends StatelessWidget {
                 color: ColorConstant.black900,
               ),
               child: Padding(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: 46,
                   left: 20,
                   right: 20,
@@ -42,7 +44,7 @@ class StatsScreen extends StatelessWidget {
                       children: [
                         InkWell(
                           onTap: () => Navigator.pop(context),
-                          child: Container(
+                          child: SizedBox(
                             height: getSize(
                               24,
                             ),
@@ -64,7 +66,7 @@ class StatsScreen extends StatelessWidget {
                               12,
                             ),
                           ),
-                          child: Container(
+                          child: SizedBox(
                             height: getVerticalSize(
                               6,
                             ),
@@ -86,7 +88,7 @@ class StatsScreen extends StatelessWidget {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Text(
-                          "My Storage",
+                          'My Storage',
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.left,
                           style: TextStyle(
@@ -104,7 +106,7 @@ class StatsScreen extends StatelessWidget {
                               1,
                             ),
                           ),
-                          child: Container(
+                          child: SizedBox(
                             height: getSize(
                               24,
                             ),
@@ -127,7 +129,7 @@ class StatsScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Container(
+                          SizedBox(
                             height: getSize(
                               78,
                             ),
@@ -145,7 +147,7 @@ class StatsScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Text(
-                                "Total Used",
+                                'Total Used',
                                 overflow: TextOverflow.ellipsis,
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
@@ -234,12 +236,12 @@ class StatsScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Text(
-                                "698",
+                                '698',
                                 overflow: TextOverflow.ellipsis,
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
@@ -254,7 +256,7 @@ class StatsScreen extends StatelessWidget {
                               ),
                               const Gap(6),
                               Text(
-                                "Items",
+                                'Items',
                                 overflow: TextOverflow.ellipsis,
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
@@ -281,9 +283,9 @@ class StatsScreen extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: getHorizontalSize(20)),
               child: Column(
                 children: [
-                  Gap(10),
+                  const Gap(10),
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 18),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
                     decoration: BoxDecoration(
                       color: ColorConstant.whiteA700,
                       borderRadius:
@@ -297,7 +299,7 @@ class StatsScreen extends StatelessWidget {
                           blurRadius: getHorizontalSize(
                             10,
                           ),
-                          offset: Offset(
+                          offset: const Offset(
                             0,
                             10,
                           ),
@@ -437,7 +439,7 @@ class StatsScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Text(
-                                  "Orix Designers",
+                                  'Orix Designers',
                                   overflow: TextOverflow.ellipsis,
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
@@ -459,7 +461,7 @@ class StatsScreen extends StatelessWidget {
                                     ),
                                   ),
                                   child: Text(
-                                    "Created: 17.02.2022",
+                                    'Created: 17.02.2022',
                                     overflow: TextOverflow.ellipsis,
                                     textAlign: TextAlign.left,
                                     style: TextStyle(
@@ -475,7 +477,7 @@ class StatsScreen extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            Container(
+                            SizedBox(
                               height: getSize(
                                 58,
                               ),
@@ -496,7 +498,7 @@ class StatsScreen extends StatelessWidget {
                     context: context,
                     removeTop: true,
                     child: ListView.builder(
-                      physics: NeverScrollableScrollPhysics(),
+                      physics: const NeverScrollableScrollPhysics(),
                       shrinkWrap: true,
                       itemCount: storageListItems.length,
                       itemBuilder: (context, index) {
