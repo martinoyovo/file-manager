@@ -1,4 +1,4 @@
-# 🗂 File Manager App built with 💙 with Flutter 🎯
+# File Manager App built with with Flutter
 ### Get Started
 
 ```shell
